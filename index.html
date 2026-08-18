@@ -33,7 +33,7 @@
     flex: 0 0 auto;
     width: 70px;
     height: 70px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     background-size: cover;
@@ -53,12 +53,12 @@
     position: absolute;
     inset: 8px;
     border-radius: 50%;
-    border: 1.5px dashed rgba(255, 255, 255, 0.38);
+    border: 10px dashed rgba(255, 255, 255, 0.38);
     background: rgba(255, 255, 255, 0.02);
   }
 
   .scene-icon.active {
-    border-color: rgba(166, 255, 142, 0.9);
+    border-color: #A2B59A;
     transform: scale(1.08);
   }
 
@@ -70,11 +70,12 @@
 
     const sceneImageMap = {
 
-      'Wetland AR': './assets/wetlandfullAR_1_1.png',
-      'Migration': './assets/bird_migration_1.png',
-      'Wetlandfield': './assets/wetlandbigeyecompressed.png',
+      'Wetland AR': './assets/wetlandrighticon_1.png',
       'WetlandAR2': './assets/WetlandfullLeft_1.png',
-
+      'Migration': './assets/migraterighticon_1.png',
+      'Migrateleft': './assets/migratelefticon_1.png',
+      'Wetlandfield': './assets/bigeyeicon_1.png',
+      
     }
 
     const getCurrentScene = () => {
@@ -104,6 +105,17 @@
       sceneCarousel.scrollTo({left: scrollTarget, behavior: 'smooth'})
     }
 
+    const getSceneOrder = (sceneName) => {
+      const matchKeys = Object.keys(sceneImageMap)
+      const normalizedName = sceneName || ''
+      const directIndex = matchKeys.indexOf(normalizedName)
+      if (directIndex !== -1) return directIndex
+
+      const lowercaseName = normalizedName.toLowerCase()
+      const lowercaseIndex = matchKeys.findIndex((key) => key.toLowerCase() === lowercaseName)
+      return lowercaseIndex !== -1 ? lowercaseIndex : Number.MAX_SAFE_INTEGER
+    }
+
     const renderSceneButtons = () => {
       const scene = getCurrentScene()
       if (!scene || typeof scene.listSpaces !== 'function') return
@@ -111,9 +123,15 @@
       const spaces = scene.listSpaces ? scene.listSpaces() : []
       if (!spaces || spaces.length === 0) return
 
+      const orderedSpaces = [...spaces].sort((a, b) => {
+        const aName = a.name || a.id
+        const bName = b.name || b.id
+        return getSceneOrder(aName) - getSceneOrder(bName)
+      })
+
       sceneCarousel.innerHTML = ''
 
-      spaces.forEach((space) => {
+      orderedSpaces.forEach((space) => {
         const button = document.createElement('button')
         button.type = 'button'
         button.className = 'scene-icon'
