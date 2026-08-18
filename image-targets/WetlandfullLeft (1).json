@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 213,
+    "left": 0,
+    "width": 574,
+    "height": 765,
+    "isRotated": true,
+    "originalWidth": 574,
+    "originalHeight": 1192
+  },
+  "imagePath": "image-targets/WetlandfullLeft (1)_luminance.png",
+  "metadata": null,
+  "name": "WetlandfullLeft (1)",
+  "resources": {
+    "originalImage": "WetlandfullLeft (1)_original.png",
+    "croppedImage": "WetlandfullLeft (1)_cropped.png",
+    "thumbnailImage": "WetlandfullLeft (1)_thumbnail.png",
+    "luminanceImage": "WetlandfullLeft (1)_luminance.png"
+  },
+  "created": 1787042351811,
+  "updated": 1787042351811
+}

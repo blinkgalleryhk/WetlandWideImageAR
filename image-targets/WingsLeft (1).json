@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 200,
+    "left": 0,
+    "width": 584,
+    "height": 778,
+    "isRotated": true,
+    "originalWidth": 584,
+    "originalHeight": 1180
+  },
+  "imagePath": "image-targets/WingsLeft (1)_luminance.png",
+  "metadata": null,
+  "name": "WingsLeft (1)",
+  "resources": {
+    "originalImage": "WingsLeft (1)_original.png",
+    "croppedImage": "WingsLeft (1)_cropped.png",
+    "thumbnailImage": "WingsLeft (1)_thumbnail.png",
+    "luminanceImage": "WingsLeft (1)_luminance.png"
+  },
+  "created": 1787044630723,
+  "updated": 1787044630723
+}

@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 249,
+    "left": 0,
+    "width": 726,
+    "height": 968,
+    "isRotated": true,
+    "originalWidth": 726,
+    "originalHeight": 1467
+  },
+  "imagePath": "image-targets/wetlandbigeyecompressed_luminance.png",
+  "metadata": null,
+  "name": "wetlandbigeyecompressed",
+  "resources": {
+    "originalImage": "wetlandbigeyecompressed_original.png",
+    "croppedImage": "wetlandbigeyecompressed_cropped.png",
+    "thumbnailImage": "wetlandbigeyecompressed_thumbnail.png",
+    "luminanceImage": "wetlandbigeyecompressed_luminance.png"
+  },
+  "created": 1786684897314,
+  "updated": 1786684897314
+}

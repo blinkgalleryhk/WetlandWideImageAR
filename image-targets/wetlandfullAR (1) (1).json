@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 799,
+    "left": 0,
+    "width": 578,
+    "height": 770,
+    "isRotated": true,
+    "originalWidth": 578,
+    "originalHeight": 2369
+  },
+  "imagePath": "image-targets/wetlandfullAR (1) (1)_luminance.png",
+  "metadata": null,
+  "name": "wetlandfullAR (1) (1)",
+  "resources": {
+    "originalImage": "wetlandfullAR (1) (1)_original.png",
+    "croppedImage": "wetlandfullAR (1) (1)_cropped.png",
+    "thumbnailImage": "wetlandfullAR (1) (1)_thumbnail.png",
+    "luminanceImage": "wetlandfullAR (1) (1)_luminance.png"
+  },
+  "created": 1786600338338,
+  "updated": 1786600338338
+}

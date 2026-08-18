@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 143,
+    "width": 940,
+    "height": 1254,
+    "isRotated": true,
+    "originalWidth": 1227,
+    "originalHeight": 1254
+  },
+  "imagePath": "image-targets/bird migration (1)_luminance.png",
+  "metadata": null,
+  "name": "bird migration (1)",
+  "resources": {
+    "originalImage": "bird migration (1)_original.png",
+    "croppedImage": "bird migration (1)_cropped.png",
+    "thumbnailImage": "bird migration (1)_thumbnail.png",
+    "luminanceImage": "bird migration (1)_luminance.png"
+  },
+  "created": 1786609449146,
+  "updated": 1786609449146
+}
