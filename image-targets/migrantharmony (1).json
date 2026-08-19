@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 140,
+    "width": 870,
+    "height": 1160,
+    "isRotated": true,
+    "originalWidth": 1151,
+    "originalHeight": 1160
+  },
+  "imagePath": "image-targets/migrantharmony (1)_luminance.png",
+  "metadata": null,
+  "name": "migrantharmony (1)",
+  "resources": {
+    "originalImage": "migrantharmony (1)_original.png",
+    "croppedImage": "migrantharmony (1)_cropped.png",
+    "thumbnailImage": "migrantharmony (1)_thumbnail.png",
+    "luminanceImage": "migrantharmony (1)_luminance.png"
+  },
+  "created": 1787111912566,
+  "updated": 1787111912566
+}
